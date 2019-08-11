@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/report_attendance_profile_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="7dp"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/report_attendance_student_profile_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:src="@drawable/ncp_avator" />
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/report_attendance_student_profile_image"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+
+                    android:id="@+id/report_attendance_student_name"
+                    style="@style/textstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Student Name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/report_attendance_student_id"
+                    style="@style/textstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Student Id"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_margin="7dp"
+            android:id="@+id/report_attendane_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="0"
+                android:id="@+id/report_attendance_present"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ncp_circle_present" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="0"
+                android:id="@+id/report_attendance_absent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ncp_circle_absent" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/header"
+        android:background="#33000000">
+
+    </TableRow>
+</RelativeLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.nconnect.teacher.activity.NotificationActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/ncp_appbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ncp_back" />
+
+                <TextView
+                    android:id="@+id/titleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Chat"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/newChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/new_chat_icn" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/historyListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/gray"
+            android:dividerHeight="1dp"
+            android:visibility="gone"
+            tools:listitem="@layout/sender_list_item"></ListView>
+
+        <LinearLayout
+            android:id="@+id/emptyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/selectTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginRight="35dp"
+                android:gravity="center"
+                android:text="Please tap on the top right “\u2295” button to start new chat with parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selectionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Class"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"/>-->
+
+                    <Spinner
+                        android:id="@+id/classSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/white"
+                        android:entries="@array/class_names"
+                        android:popupBackground="@color/white"
+                        android:spinnerMode="dropdown" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Section"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"/>-->
+
+                    <Spinner
+                        android:id="@+id/sectionSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/white"
+                        android:entries="@array/section_names"
+                        android:popupBackground="@color/white"
+                        android:spinnerMode="dropdown" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- <ListView
+                 android:id="@+id/studentListView"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:divider="@color/gray"
+                 android:dividerHeight="1dp"
+                 tools:listitem="@layout/newchat_select_item"></ListView>
+ -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/studentListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inviteLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/infoTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="4sp"
+                android:textColor="#4a4a4a"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/successSentInfoView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:lineSpacingExtra="3sp"
+                    android:textColor="#969c44"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/sendInviteButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/send_invite_bg"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Send Invite"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/ncp_logo_yellow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="WELCOME TO NCONNECT"
+            android:textColor="@color/orange_yelloew"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="Please Enter Your Details"
+            android:textColor="#4a4a4a"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:hint="About Yourself"
+            android:padding="10dp"
+            android:textColor="#4a4a4a"
+            android:textColorHint="#9d9d9d"
+            android:textSize="16sp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#cccccc">
+
+        </TableRow>
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:hint="Email ID"
+            android:padding="10dp"
+            android:textColor="#4a4a4a"
+            android:textColorHint="#9d9d9d"
+            android:textSize="16sp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#cccccc">
+
+        </TableRow>
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:hint="Contact Number"
+            android:padding="10dp"
+            android:textColor="#4a4a4a"
+            android:textColorHint="#9d9d9d"
+            android:textSize="16sp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#cccccc">
+
+        </TableRow>
+
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:drawableEnd="@drawable/ncp_calendar"
+            android:drawableRight="@drawable/ncp_calendar"
+            android:hint="Date of birth (DD/MM/YY)"
+            android:padding="10dp"
+            android:textColor="#4a4a4a"
+            android:textColorHint="#9d9d9d"
+            android:textSize="16sp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#cccccc">
+
+        </TableRow>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:hint="Address"
+            android:padding="10dp"
+            android:textColor="#4a4a4a"
+            android:textColorHint="#9d9d9d"
+            android:textSize="16sp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#cccccc">
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginRight="42dp"
+            android:background="@drawable/ncp_button_back_default"
+            android:padding="15dp"
+            android:text="NEXT" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/comment_parent_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/comment_parent_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ncp_avator" />
+
+        <LinearLayout
+            android:id="@+id/comment_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/comment_fathername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Piyush sharma"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/comment_childname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="akash kumar parent" />
+
+            <TextView
+                android:id="@+id/comment_content_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Lorem ipsum is lorem Lorem ipsum is lorem vLorem ipsum is lorem Lorem ipsum is lorem Lorem ipsum is lorem Lorem ipsum is lorem"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_teacher_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/comment_teacher_iamge"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ncp_avator" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/comment_teachername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Piyush sharma"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/comment_teacherdesignation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="akash kumar parent" />
+
+            <TextView
+                android:id="@+id/comment_content_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Lorem ipsum is lorem Lorem ipsum is lorem vLorem ipsum is lorem Lorem ipsum is lorem Lorem ipsum is lorem Lorem ipsum is lorem"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timeStampOfIssueComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#8b8b8b"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+</LinearLayout>

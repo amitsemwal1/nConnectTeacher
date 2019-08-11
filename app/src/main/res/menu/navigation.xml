@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_home"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/ncp_home"
+        android:title="@string/home"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/nav_stories"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/ncp_stories"
+        android:title="School Board"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/nav_chat"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/ncp_chats"
+        android:title="@string/chat"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/nav_noticeboard"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/ncp_nb_active"
+        android:title="@string/notice_board"
+        app:showAsAction="withText" />
+
+</menu>

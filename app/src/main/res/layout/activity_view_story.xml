@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.nconnect.teacher.activity.ViewStoryActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/ncp_appbar"
+            app:navigationIcon="@drawable/ncp_back"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:visibility="visible" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/view_stories_profileimage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:src="@drawable/ncp_avator" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/view_stories_profileimage"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/view_stories_profile_name"
+                        style="@style/textstyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/view_stories_designation"
+                        style="@style/textstyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/view_stories_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="16dp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/view_stories_images_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:scrollbars="vertical" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/view_stories_attachDocument"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/view_stories_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_stories_classandsection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#aaa" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/view_stories_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingExtra="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/containerLikeCommentStatus"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/likeContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        app:srcCompat="@drawable/ncp_likes" />
+
+                    <TextView
+                        android:id="@+id/view_stories_likes_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="0 likes"
+                        android:textColor="#aaa"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/commentContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/likeContainer"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        app:srcCompat="@drawable/ncp_comments" />
+
+                    <TextView
+                        android:id="@+id/view_stories_comment_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="0 comments"
+                        android:textColor="#aaa"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/likeCommentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp">
+
+                <CheckedTextView
+                    android:id="@+id/view_stories_like"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ncp_like_unlike"
+                    android:checked="true"
+                    android:padding="15dp" />
+
+                <ImageView
+                    android:id="@+id/view_stories_comment"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/ncp_comment_outline" />
+
+
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="#88AAAAAA">
+
+            </TableRow>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/view_stories_comment_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="100dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/stories_comment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v7.widget.CardView
+            style="@style/cardviewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            app:cardCornerRadius="1dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/stories_comment_text"
+                        style="@style/textstyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/box_corner_round"
+                        android:gravity="center|left"
+                        android:hint="Type here. . ."
+                        android:inputType="textMultiLine"
+                        android:minHeight="40dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="25dp"
+                        android:textColorHint="@color/text_color"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/stories_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.7"
+                    android:padding="5dp"
+                    android:src="@drawable/ncp_send" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:constantSize="true"
+    android:variablePadding="true">
+    <item android:drawable="@drawable/vector_circle_with_fill_ico"
+        android:state_checked="true" />
+
+    <item android:drawable="@drawable/vector_circle_ico"
+        android:state_checked="false" />
+
+</selector>

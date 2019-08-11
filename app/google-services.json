@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "460804880999",
+    "firebase_url": "https://nconnect-6a958.firebaseio.com",
+    "project_id": "nconnect-6a958",
+    "storage_bucket": "nconnect-6a958.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460804880999:android:be933a98df054ece",
+        "android_client_info": {
+          "package_name": "com.nconnect.teacher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460804880999-or3tnh93dk0i27qqtq706anlvj4lqr2c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nconnect.pappaya.education.nconnectteachers",
+            "certificate_hash": "0c175ffab3c71cd5f5321322bbb403ec2daa9d7b"
+          }
+        },
+        {
+          "client_id": "460804880999-93crhjg7jgimdkjv1gou7vel49kr4ef9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW9TTrxf2Yf-YkUfDkWD5sKrCOzXlwuT0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460804880999-93crhjg7jgimdkjv1gou7vel49kr4ef9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

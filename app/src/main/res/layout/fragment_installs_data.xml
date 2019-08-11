@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Parents"
+                android:textColor="#4a4a4a"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                style="@style/cardviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ncp_rectangle"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/activeparentInstalledCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        android:textColor="#4a4a4a"
+                        android:textSize="26dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/activeparentsInstalledPercentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/activeparentCount"
+                        android:layout_alignBottom="@id/activeparentCount"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/activeparentInstalledCount"
+                        android:alpha="0.8"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:textColor="#3B3B3B"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/activeparentInstalledCount"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:alpha="0.8"
+                        android:paddingTop="10dp"
+                        android:text="Parents Installed"
+                        android:textColor="#4a4a4a"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ncp_couple_parent" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ncp_box"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgXlsxParent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ncp_xls" />
+
+            <TextView
+                android:id="@+id/inactiveteacherTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imgXlsxParent"
+                android:padding="5dp"
+                android:text="Non-installed Parents.xlsx"
+                android:textColor="#4a4a4a"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inactiveteacherTitle"
+                android:layout_alignLeft="@+id/inactiveteacherTitle"
+                android:gravity="center"
+                android:padding="5dp"
+                android:alpha="0.8"
+                android:text="Excel Document"
+                android:textColor="#4a4a4a"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/downloadNonInstalledPArentXlsx"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:tint="#4a4a4a"
+                app:srcCompat="@drawable/ncp_download" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/downloadNonInstalledPArentXlsx"
+                android:layout_alignLeft="@+id/downloadNonInstalledPArentXlsx"
+                android:layout_alignRight="@+id/downloadNonInstalledPArentXlsx"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textColor="#9B9B9B"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Teachers"
+                android:textColor="#4a4a4a"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                style="@style/cardviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ncp_rectangle"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/activeTeacherInstalledCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        android:textColor="#4a4a4a"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/activeTeachersInstalledPercentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/activeparentCount"
+                        android:layout_alignBottom="@id/activeparentCount"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/activeTeacherInstalledCount"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:textColor="#3B3B3B"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/activeTeachersInstalledPercentage"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:alpha="0.8"
+                        android:paddingTop="10dp"
+                        android:text="Teachers Installed"
+                        android:textColor="#4a4a4a"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ncp_teacher_ico" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ncp_box"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgXlsxTeacher"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ncp_xls" />
+
+            <TextView
+                android:id="@+id/inactiveparentTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imgXlsxTeacher"
+                android:padding="5dp"
+                android:text="Non-installed Teacher.xlsx"
+                android:textColor="#4a4a4a"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inactiveparentTitle"
+                android:layout_alignLeft="@+id/inactiveparentTitle"
+                android:gravity="center"
+                android:alpha="0.8"
+                android:padding="5dp"
+                android:text="Excel Document"
+                android:textColor="#4a4a4a"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/downloadNonInstalledTeachersXlsx"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:tint="#4a4a4a"
+                app:srcCompat="@drawable/ncp_download" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/downloadNonInstalledTeachersXlsx"
+                android:layout_alignLeft="@+id/downloadNonInstalledTeachersXlsx"
+                android:layout_alignRight="@+id/downloadNonInstalledTeachersXlsx"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textColor="#9B9B9B"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

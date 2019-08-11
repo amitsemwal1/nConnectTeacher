@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/monthly_attendance_profile_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="7dp"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/monthly_attendance_student_profile_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:src="@drawable/ncp_avator" />
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/monthly_attendance_student_profile_image"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+
+                    android:id="@+id/monthly_attendance_student_name"
+                    style="@style/textstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Student Name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/monthly_attendance_student_id"
+                    style="@style/textstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Student Id"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_margin="7dp"
+            android:id="@+id/monthly_attendane_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+           android:layout_alignParentRight="true"
+             android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ToggleButton
+                android:id="@+id/monthly_attendance_present"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ncp_toggle_present"
+                android:gravity="center"
+                android:textColor="#e2e2e2"
+                android:checked="true"
+                android:clickable="false"
+                android:textSize="18sp" />
+
+            <ToggleButton
+                android:id="@+id/monthly_attendance_absent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ncp_toggle_absent"
+                android:gravity="center"
+                android:clickable="false"
+
+                android:checked="true"
+                android:textColor="#e2e2e2"
+
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/header"
+        android:background="#33000000">
+
+    </TableRow>
+
+</RelativeLayout>

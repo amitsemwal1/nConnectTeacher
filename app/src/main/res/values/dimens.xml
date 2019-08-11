@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="padding_logo">10dp</dimen>
+    <dimen name="logo_size_height">100dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="margin_padding_10">10dp</dimen>
+    <dimen name="margin_padding_20">20dp</dimen>
+        <!--below two line is used to disable shifting mode in bottom navigation view -->
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">12sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12sp</dimen>
+
+    <dimen name="activity_padding">16dp</dimen>
+    <dimen name="placeholder_image">50dp</dimen>
+    <dimen name="placeholder_text_height">8dp</dimen>
+    <dimen name="activity_padding_horizontal">16dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="name">15dp</dimen>
+    <dimen name="chef">12dp</dimen>
+    <dimen name="timestamp">11dp</dimen>
+    <dimen name="description">15dp</dimen>
+    <dimen name="price">13dp</dimen>
+</resources>

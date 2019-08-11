@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/ncp_appbar"
+            app:navigationIcon="@drawable/ncp_hamburg"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ncp_hamburg" />
+
+            <ImageView
+                android:id="@+id/toolbarLogo"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ncp_toolbarlogo" />
+
+            <TextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Notice board"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        layout="@layout/content_primary_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior" />
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        android:foreground="?attr/selectableItemBackground"
+        android:visibility="gone"
+        app:itemBackground="@color/card_color"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemIconSize="25dp"
+        app:itemIconTint="@color/bottom_nav_selector"
+        app:itemTextColor="@color/bottom_nav_selector"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/navigation" />
+
+
+    <LinearLayout
+        android:id="@+id/schoolBoardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="112dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_anchor="@id/fragmentContainer"
+        app:layout_anchorGravity="bottom">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:alpha="0.2"
+            android:background="#80000000">
+
+        </TableRow>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="School Board"
+                android:textAllCaps="true"
+                android:textColor="#3b3b3b" />
+
+            <ImageView
+                android:id="@+id/schoolBoard"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ncp_up_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

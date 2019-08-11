@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/nointernet_image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/ncp_no_internet_illustration" />
+
+    <TextView
+        android:id="@+id/nointernettext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nointernet_image"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="NO INTERNET CONNECTION"
+        android:textColor="@color/orange_yelloew"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/nointernet_checktext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nointernettext"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:text="Please check your internet connection and try again.."
+        android:textColor="#9b9b9b"
+        android:textSize="18sp" />
+
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/nointernet_try_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nointernet_checktext"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:ems="7"
+        android:gravity="center"
+        android:background="@drawable/ncp_box_gradient"
+        android:text="Try again"
+        android:textColor="#eb6a32"
+        android:textSize="18sp" />
+</RelativeLayout>

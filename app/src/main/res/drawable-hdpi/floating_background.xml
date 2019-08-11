@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <gradient
+                android:angle="315"
+                android:centerColor="#E96537"
+                android:endColor="#DF4059"
+                android:startColor="#F08022"
+                android:type="linear" />
+        </shape>
+
+    </item>
+    <item android:gravity="center">
+        <bitmap
+            android:tileMode="repeat"
+            android:tint="@color/white"
+            android:gravity="fill_horizontal"
+            android:src="@drawable/chat_ico" />
+
+    </item>
+
+</layer-list>

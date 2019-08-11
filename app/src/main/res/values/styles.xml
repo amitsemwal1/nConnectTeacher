@@ -1,0 +1,166 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <!-- To change the background of options menu-->
+        <item name="android:itemBackground">@color/white</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="buttonstyle">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/ncp_button_back_default</item>
+    </style>
+
+    <style name="grad">
+        <item name="android:background">@drawable/grad_back</item>
+    </style>
+
+    <style name="textstyle">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/text_color</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="MyDialogThemeCalender" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="textColorAlertDialogListItem">@android:color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="cardviewStyle" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/card_color</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="MRadioButton.Purple" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:colorPressedHighlight">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/text_color</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="textColorAlertDialogListItem">@android:color/white</item>
+        <item name="colorAccent">@color/text_color</item>
+        <item name="android:textColorPrimary">@color/text_color</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="MyTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">#F00</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="my_progress_bar_circle">
+        <item name="android:indeterminateDrawable">@drawable/loader</item>
+        <item name="android:minWidth">30dp</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:maxWidth">1000dp</item>
+        <item name="android:maxHeight">1000dp</item>
+
+    </style>
+
+    <style name="textlable" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">#9d9d9d</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">#4a4a4a</item>
+        <item name="colorControlNormal">#9d9d9d</item>
+        <item name="colorControlActivated">#4a4a4a</item>
+    </style>
+
+    <style name="CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="mytheme" parent="android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">#5CFFFFFF</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+
+    <style name="fullScreen_dialog_theme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="dialog_background" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">#4a4a4a</item>
+    </style>
+
+    <style name="MyAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="full_screen_dialog" parent="@android:style/Theme.Translucent">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+</resources>

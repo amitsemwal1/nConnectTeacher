@@ -1,0 +1,19 @@
+package com.nconnect.teacher.services;
+
+import android.os.Binder;
+
+import java.lang.ref.WeakReference;
+
+public class LocalBinder<S> extends Binder {
+
+    private static final String TAG = LocalBinder.class.getSimpleName();
+    private final WeakReference<S> mService;
+
+    public LocalBinder(final S service) {
+        mService = new WeakReference<S>(service);
+    }
+
+    public S getService() {
+        return mService.get();
+    }
+}

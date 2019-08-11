@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ncp_gradient"
+    android:fadeScrollbars="true"
+    android:padding="5dp"
+    android:scrollbars="vertical">
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:src="@drawable/ncp_arc_back"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ncp_white_logo"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/containerRejectedStoriesToolbarl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rejectedStoriesTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="Rejected Stories"
+                android:textColor="#4a4a4a"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/closeRejectedStories"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ncp_cancel" />
+
+
+        </RelativeLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/rejectedStoriesTitle"
+            android:background="#d8d8d8">
+
+        </TableRow>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh_rejected_stories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/containerRejectedStoriesToolbarl"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/rejectedStories_placeholder"
+                layout="@layout/no_post_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rejected_stories_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

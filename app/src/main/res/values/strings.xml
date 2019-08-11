@@ -1,0 +1,103 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="navigation_drawer_open" translatable="false">Drawer open</string>
+    <string name="navigation_drawer_close" translatable="false">Drawer close</string>
+    <string name="registerScreen">Registration Screen</string>
+    <string name="app_name">nConnect Teacher</string>
+    <string name="title_activity_new_user">NewUserActivity</string>
+    <string name="get_otp">GET OTP</string>
+    <string name="student_id">Student ID</string>
+    <string name="username">Username</string>
+    <string name="register_no">Register Mobile Number</string>
+    <string name="getotpcontent">SMS with a login details sent on your registered mobile</string>
+    <string name="otp_verified">OTP has been Verified</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ed_password">Set New Password</string>
+    <string name="submit">SUBMIT</string>
+    <string name="verifiy">Verify</string>
+    <string name="confirm_password">Confirm New Password</string>
+    <string name="resendotp">RESEND OTP</string>
+    <string name="dash_board">Dashboard</string>
+    <string name="flag">flag</string>
+    <string name="country_code">+91</string>
+    <string name="my_number">9600447158</string>
+    <string name="stories">Stories</string>
+    <string name="issues">Issues</string>
+    <string name="notice_board">Noticeboard</string>
+    <string name="attendance">Attendance</string>
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="my_profile">You</string>
+    <string name="title_activity_dash_board">DashBoard</string>
+    <string name="events">Events</string>
+    <string name="announcements">Announcements</string>
+    <string name="my_name">Vazhavanthakumar</string>
+    <string name="father">Father</string>
+    <string name="my_profile_name">My Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="about_us">About Us</string>
+    <string name="support">Support</string>
+    <string name="faq">FAQ</string>
+    <string name="logout">Logout</string>
+    <string name="relation_ship">Relationship</string>
+    <string name="mother">Mother</string>
+    <string name="class_teacher">Class Teacher</string>
+    <string name="date_sample">Sep 10,2018</string>
+    <string name="wishes">Happy Diwali Wishes to all...</string>
+    <string name="class_sec">Class IV,Section C</string>
+    <string name="sample_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium ex eget nulla aliquam, sed hendrerit sapien euismod. Praesent finibus ligula bibendum, venenatis ligula ut, posuere enim. Praesent enim ante, ullamcorper in lorem id, viverra eleifend diam. Donec porttitor vitae arcu nec hendrerit. Nullam accumsan auctor purus, id congue nibh malesuada quis. Vivamus semper vel augue ac efficitur. Nam consectetur tincidunt sem nec ornare.</string>
+    <string name="narayana_school">Narayana School</string>
+    <string name="auditorium">Auditorium 1</string>
+    <string name="annual_day_celebration">Annual Day Celebration</string>
+    <string name="time">5 PM - 7.00 PM</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="present">Present</string>
+    <string name="absent">Absent</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="name">Name</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="email_id">Email Id</string>
+    <string name="address">Address</string>
+    <string name="myemail">vazhavanthakumar@gmail.com</string>
+    <string name="copy_right">\u00a9 2018 Narayana Education Group</string>
+    <string name="all_rights_reserved">All Rights Reserved</string>
+    <string name="father_name">Father Name</string>
+    <string name="did_not_have_an_account">Did not have an account ! Register here</string>
+    <string name="lorem_ipsum">Lorem Ipsum</string>
+    <string name="mother_name"><![CDATA[Mother&apos;s Name]]></string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="re_enter_password">Re-enter New Password</string>
+    <string name="forget_password">FORGOT PASSWORD</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="welcome">Welcome</string>
+    <string name="allreadyLogin">Already have an account ? Login here</string>
+    <string name="dd_mm_yy">DD-MM-YY</string>
+    <string name="attach">Attach</string>
+    <string name="starts">Starts at</string>
+    <string name="ends">Ends at</string>
+    <string name="location">Location</string>
+    <string name="class_name">Class</string>
+    <string name="label_swipe_to_refresh">Pull down to refresh</string>
+    <string name="default_message">Default Message</string>
+    <string name="home">Home</string>
+    <string name="chat">Chat</string>
+    <string name="latestStories">latest Stories</string>
+    <string name="chatwithTeacher">Chat with teacher</string>
+    <string name="attachement_included">Attachement Included</string>
+    <string name="more">More</string>
+
+    <string-array name="class_names">
+        <item>Class</item>
+    </string-array>
+    <string-array name="section_names">
+        <item>Section</item>
+    </string-array>
+
+    <string name="error_chat_notavailable">The Virtual PTM will be open only between 4-7pm everyday.</string>
+    <string name="error_chat_available">Type here. . .</string>
+</resources>

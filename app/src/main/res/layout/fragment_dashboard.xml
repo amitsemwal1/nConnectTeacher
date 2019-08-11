@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/containerLinear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/profileArcContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/ncp_appbarheader" />
+
+                <com.nconnect.teacher.helper.CircularImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ncp_avator"
+                    android:visibility="gone"
+                    app:civ_border="true"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="3dp" />
+
+                <com.nconnect.teacher.helper.CircularImageView
+                    android:id="@+id/profileImagePrinicipal"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/ncp_avator"
+                    android:visibility="visible"
+                    app:civ_border="true"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="3dp" />
+
+                <LinearLayout
+                    android:id="@+id/approve_stories_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/profileImagePrinicipal"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_approval_Stories"
+                        style="@style/cardviewStyle"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center"
+                        android:shape="ring"
+                        app:cardBackgroundColor="@color/card_color"
+                        app:cardCornerRadius="32dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            app:srcCompat="@drawable/ncp_approve_stories" />
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/dashboard_approve_stories_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Approve Stories" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/profile_name_container_principal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="50dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/profilename_principal"
+                    style="@style/textstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/profileDesignation_principal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/profile_name_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/profilename"
+                    style="@style/textstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Sunitha Kashyap"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/profileDesignation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Science teacher" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerDashBoard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="56dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

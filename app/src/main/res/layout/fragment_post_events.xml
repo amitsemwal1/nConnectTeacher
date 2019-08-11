@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Event Name" />
+
+            <EditText
+                android:id="@+id/post_events_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ncp_box"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Event Description" />
+
+            <EditText
+                android:id="@+id/post_events_description"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ncp_box"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/text_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Start time" />
+
+                    <LinearLayout
+                        android:id="@+id/postEventFromDateContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ncp_box"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/fromDateText"
+                            style="@style/textstyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="left|center"
+                            android:paddingLeft="5dp"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TableRow
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#cccccc">
+
+                        </TableRow>
+
+                        <ImageView
+                            android:id="@+id/fromdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/ncp_monthlyattendancereport" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="End Time" />
+
+                    <LinearLayout
+                        android:id="@+id/postEventToDateContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/ncp_box"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/toDateText"
+                            style="@style/textstyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="left|center"
+                            android:paddingLeft="5dp"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TableRow
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#cccccc">
+
+                        </TableRow>
+
+                        <ImageView
+                            android:id="@+id/todate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/ncp_monthlyattendancereport" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Address" />
+
+            <EditText
+                android:id="@+id/post_events_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ncp_box"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Landmark" />
+
+            <EditText
+                android:id="@+id/post_events_landmork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ncp_box"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Upload Image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/post_events_uploadimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ncp_text_back"
+                    android:gravity="center"
+                    android:text="select photo"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/post_events_image_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:text=""
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/post_events_image_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:textColor="#a8a8a8" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/select_standards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/ncp_select_standard"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="select standards"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/containerPusblishClasses"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/tagPublisH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Publish : "
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textPublish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tagPublisH"
+                    android:textColor="#FA9B00" />
+
+                <ImageView
+                    android:id="@+id/arrowSelectstandards"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ncp_close" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/post_events_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/ncp_button_back_default"
+                android:textSize="18sp"
+                android:text="Post"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

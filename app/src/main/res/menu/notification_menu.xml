@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/ncp_notification"
+        android:title="Notification"
+        app:actionLayout="@layout/notify_action_item_layout"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/create_issue"
+        app:showAsAction="always"
+        android:icon="@drawable/ncp_plus_icon"
+        android:title="create issue"></item>
+</menu>

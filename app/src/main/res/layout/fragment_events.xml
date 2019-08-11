@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/events_refresh_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spnSchoolBoard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/white"
+                android:popupBackground="@color/white"
+                android:spinnerMode="dropdown" />
+
+            <TableRow
+                android:id="@+id/spinner_bar"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/spnSchoolBoard"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:alpha="0.2"
+                android:background="#4a4a4a">
+
+            </TableRow>
+
+            <include
+                android:id="@+id/events_placeholder"
+                layout="@layout/no_post_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_bar"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/events_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinner_bar"
+                android:scrollbars="vertical"
+                android:visibility="visible">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

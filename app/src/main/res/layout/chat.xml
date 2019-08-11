@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/toolbar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar"
+        android:layout_above="@id/messageLayout">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/msgListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/attachmentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_above="@id/messageLayout">
+
+        <android.support.v7.widget.CardView
+            style="@style/cardviewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            app:cardCornerRadius="1dp"
+            app:cardElevation="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/cameraImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/camera_icn"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/pictureImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/photo_icn"/>
+
+                <ImageView
+                    android:id="@+id/documentImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/document_icn"/>
+
+                <ImageView
+                    android:id="@+id/audioImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/contact_icn"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/messageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            style="@style/cardviewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            app:cardCornerRadius="1dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:id="@+id/messageMainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/messageEditText"
+                        style="@style/textstyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/box_corner_round"
+                        android:gravity="center|left"
+                        android:hint="Type here. . ."
+                        android:inputType="textMultiLine"
+                        android:minHeight="40dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="25dp"
+                        android:layout_centerVertical="true"
+                        android:textColorHint="@color/text_color"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/attachIcon"
+                        android:layout_width="25dp"
+                        android:layout_height="56dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+                        android:rotation="25"
+                        app:srcCompat="@mipmap/attach_icon" />
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/sendMessageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.7"
+                    android:padding="5dp"
+                    android:src="@drawable/ncp_send" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/emptyLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:minHeight="70dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="15sp"
+                    android:text="@string/error_chat_notavailable"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    <!--<include layout="@layout/loading_layout"></include>-->
+
+</RelativeLayout>

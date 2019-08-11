@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/ncp_big_check" />
+
+
+    <TextView
+        android:id="@+id/textMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:text="SMS with the login details sent on your registered mobile."
+        android:textColor="#4a4a4a"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/cool"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/ncp_button_back"
+        android:gravity="center"
+        android:text="COOL"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

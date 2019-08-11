@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/classChecked"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="15dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ncp_tick" />
+
+    <CheckedTextView
+        android:id="@+id/class_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/classChecked"
+        android:checkMark="@drawable/ncp_open_close"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:checked="false"
+        android:textColor="@drawable/ncp_check_uncheck"
+        android:textSize="16sp" />
+
+
+    <TableRow
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/class_name"
+        android:background="#33000000">
+
+    </TableRow>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

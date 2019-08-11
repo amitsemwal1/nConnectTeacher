@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/hamNotification"
+            android:icon="@drawable/ncp_notifications"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/hamPastIssues"
+            android:icon="@drawable/ncp_past_issues"
+            android:title="Past Issues" />
+
+        <item
+            android:id="@+id/hamIssues"
+            android:icon="@drawable/ncp_padlock"
+            android:title="Issues" />
+        <item
+            android:id="@+id/hamMyStories"
+            android:icon="@drawable/ncp_mystories"
+            android:title="My Stories" />
+
+        <item
+            android:id="@+id/hamApproovedStories"
+            android:icon="@drawable/ncp_approve_stories_outline"
+            android:title="Approve Stories" />
+
+        <item
+            android:id="@+id/hamMyEvents"
+            android:icon="@drawable/ncp_myannouncment"
+            android:title="My Events" />
+
+        <item
+            android:id="@+id/hamMyAnnoucements"
+            android:icon="@drawable/ncp_myevents"
+            android:title="My Announcement" />
+        <item
+            android:id="@+id/hamUnApprovedStories"
+            android:icon="@drawable/ncp_unapproved_stories"
+            android:title="Unapproved Stories" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/hamPastAttendance"
+            android:icon="@drawable/ncp_past_attendance"
+            android:title="Past Attendance" />
+        <item
+            android:id="@+id/hamMonthlyAttendacneReport"
+            android:icon="@drawable/ncp_monthlyattendancereport"
+            android:title="Monthly Attendance Report" />
+
+        <item
+            android:id="@+id/hamMyProfile"
+            android:icon="@drawable/ncp_profile"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/action_logout_id"
+            android:icon="@drawable/ncp_logout"
+            android:title="Logout" />
+    </group>
+</menu>

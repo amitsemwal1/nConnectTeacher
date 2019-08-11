@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/mailbox"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ncp_mailbox" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textNoPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mailbox"
+            android:gravity="center"
+            android:text="You do not have any Posts"
+            android:textColor="#616161"
+            android:textSize="16sp" />
+
+        <TextView
+            android:textColor="#848484"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textNoPost"
+            android:text="Please check back later" />
+    </RelativeLayout>
+</RelativeLayout>

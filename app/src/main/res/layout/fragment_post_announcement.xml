@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Announcement Name" />
+
+            <EditText
+                android:id="@+id/post_announcement_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ncp_box"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Announcement Description" />
+
+            <EditText
+                android:id="@+id/post_announcement_description"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ncp_box"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/select_standards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/ncp_select_standard"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="select standards"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/containerPusblishClasses"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/tagPublisH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Publish : "
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textPublish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tagPublisH"
+                    android:textColor="#FA9B00" />
+
+                <ImageView
+                    android:id="@+id/arrowSelectstandards"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ncp_close" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/post_announcement_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/ncp_button_back_default"
+                android:text="Post"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

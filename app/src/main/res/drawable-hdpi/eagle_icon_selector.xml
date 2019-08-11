@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/vector_eagle_eye_ico" android:padding="20dp" android:state_checked="true" />
+    <item android:drawable="@drawable/vector_eagle_eye_close_ico" android:padding="20dp" />
+</selector>
